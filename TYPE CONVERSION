@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main()
+
+{
+
+    int a=10;
+
+    float b=(float)a; //implicit type conversion
+
+    float c=12.34;
+
+    int d=(int)c;//explicit type conversion
+
+    printf("\n a=%d",a);
+
+    printf("\n b=%f",b);
+
+    printf("\n c=%f",c);
+
+    return 0;
+
+}
+
+OUTPUT:-
+
+a=10
+
+b=10.000000
+
+c=12.340000
+
