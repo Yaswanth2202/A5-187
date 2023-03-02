@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+main()
+
+{
+
+    int a,b,c;
+
+    printf("before swapping:");
+
+    printf("\n enter a:");
+
+    scanf("%d",&a);
+
+    printf("\n enter b:");
+
+    scanf("%d",&b);
+
+    c=a;
+
+    a=b;
+
+    b=c;
+
+    printf("after swapping");
+
+    printf("\n a=%d,b=%d",a,b);
+
+}
+
+OUTPUT:-
+
+before swapping:
+
+ enter a:10
+
+ enter b:20
+
+ after swapping
+
+ a=20,b=10
