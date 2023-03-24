@@ -1,0 +1,93 @@
+#include <stdio.h>
+
+#define MAXROWS 4
+
+#define MAXCOLS 4
+
+int main()
+
+{
+
+    int arr[MAXROWS][MAXCOLS], transpose[MAXROWS][MAXCOLS];
+
+    int i, j;
+
+    printf("Input elements in the matrix :\n");
+
+    for(i=0; i<MAXROWS; i++)
+
+    {
+
+        for(j=0; j<MAXCOLS; j++)
+
+        {
+
+            printf("Element [%d][%d] : ", i, j);
+
+            scanf("%d", &arr[i][j]);
+
+        }
+
+    }
+
+    printf("\nThe matrix is :\n");
+
+    for(i=0; i<MAXROWS; i++)
+
+    {
+
+        for(j=0; j<MAXCOLS; j++)
+
+        {
+
+            printf("%d  ", arr[i][j]);
+
+            if(j == MAXCOLS-1)
+
+                printf("\n\n");
+
+        }
+
+    }
+
+    //Finding transpose of matrix
+
+    for(i=0; i<MAXROWS; i++)
+
+    {
+
+        for(j=0; j<MAXCOLS; j++)
+
+        {
+
+            transpose[j][i] = arr[i][j];
+
+        }
+
+    }
+
+    //Printing the transpose
+
+    printf("\nTranspose of Matrix:\n");
+
+    for(i=0; i<MAXROWS; i++)
+
+    {
+
+        for(j=0; j<MAXCOLS; j++)
+
+        {
+
+            printf("%d  ", transpose[i][j]);
+
+            if(j == MAXCOLS-1)
+
+                printf("\n\n");
+
+        }
+
+    }
+
+    return 0;
+
+}
